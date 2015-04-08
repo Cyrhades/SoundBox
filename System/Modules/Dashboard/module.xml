@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+	<version name="Dashboard" version="1.0" author="LECOMTE Cyril" />
+	<allowed for="all" />
+	
+	<description><![CDATA[
+		Dashboard : panneau d'accueil.
+	]]></description>
+	
+	<execs>
+		<!-- AU CHARGEMENT DE LA PAGE -->
+		<exec event="LOAD_PAGE" classe="Modules\Dashboard\lib\Dashboard" method="init">
+			<resources>
+				<resource-root path="artwork/css/dashboard.css" />
+				<resource-root path="artwork/js/dashboard.js" />
+				<resource-root path="artwork/view/dashboard.php" />
+			</resources>
+		</exec>
+		<!-- A L'INITIALISATION DU MENU -->
+		<exec event="INIT_MENU" classe="Modules\Dashboard\lib\Dashboard" method="init_menu">
+			<params>
+				<param name="url">dashboard/</param>
+				<param name="fa_icone">dashboard</param>
+				<param name="texte" traduct="false">Dashboard</param>
+				<param name="ordre">10</param>
+			</params>
+		</exec>
+	</execs>
+</module>

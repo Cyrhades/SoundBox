@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+	<version name="Account" version="1.0" author="LECOMTE Cyril" />
+	<allowed for="all" />
+	
+	<description><![CDATA[
+		Module de création de compte.
+	]]></description>
+	
+    <dependencies>
+        <module name="users" optional="false" />
+    </dependencies>
+
+	<execs>
+		<!-- AU CHARGEMENT DE LA PAGE -->
+		<exec event="LOAD_PAGE" classe="Modules\Account\lib\Account" method="init">
+			<resources>
+				<resource-root path="artwork/css/account.css" />
+				<resource-root path="artwork/js/account.js" />
+				<resource-root path="artwork/view/account.php" />
+			</resources>
+		</exec>
+		<!-- A L'INITIALISATION DU MENU -->
+		<exec event="INIT_MENU" classe="Modules\Account\lib\Account" method="init_menu">
+			<params>
+				<param name="url">register/</param>
+				<param name="fa_icone">users</param>
+				<param name="texte" traduct="false">Utilisateurs</param>
+				<param name="ordre">50</param>
+			</params>
+		</exec>
+	</execs>
+</module>

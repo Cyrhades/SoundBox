@@ -1,0 +1,1 @@
+console.log("démarrage du mode upload");

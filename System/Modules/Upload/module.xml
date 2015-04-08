@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+	<version name="Upload" version="1.0" author="LECOMTE Cyril" />
+	<allowed for="all" />
+	<description><![CDATA[Upload : Permet l'envoi de sons pour soundBox.]]></description>
+	<execs>
+		<!-- AU CHARGEMENT DE LA PAGE SUR MODULE UPLOAD -->
+		<exec event="START_CONTROLLER_UPLOAD" classe="Modules\Upload\lib\Upload" method="loadController">
+			<params>
+				<param name="view">\Modules\Upload\artwork\view\upload.php</param>
+			</params>
+			<ressources>
+				<ressource type="css" path="/upload/artwork/css/upload.css" />
+				<ressource type="javascript" path="/upload/artwork/js/upload.js" />
+			</ressources>
+		</exec>
+		<!-- CONSTRUCTION DU FORMULAIRE -->
+		<exec event="INIT_FORM_UPLOAD_MP3" classe="Modules\Upload\lib\Upload" method="initFormUpload" />
+		<!-- A L'INITIALISATION DU MENU -->
+		<exec event="INIT_MENU" classe="Modules\Upload\lib\Upload" method="init_menu">
+			<params>
+				<param name="url">upload/</param>
+				<param name="fa_icone">upload</param>
+				<param name="texte" traduct="false">Upload</param>
+				<param name="ordre">80</param>
+			</params>
+		</exec>
+	</execs>
+</module>

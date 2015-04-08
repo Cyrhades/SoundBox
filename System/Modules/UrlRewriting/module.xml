@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+	<version name="UrlRewriting" version="1.0" author="LECOMTE Cyril" />
+	<allowed for="all" />
+	<description><![CDATA[Gestion de l'url Rewriting]]></description>
+	<execs>
+		<exec event="LOAD_PAGE" classe="Modules\UrlRewriting\lib\UrlRewriting" method="decodeUrlRewrite" />
+	</execs>
+</module>

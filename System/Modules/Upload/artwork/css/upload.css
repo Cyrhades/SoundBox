@@ -1,0 +1,53 @@
+.form_upload {
+	background-color:#f7f2ec; 
+	position:relative;top:200px;overflow:hidden;
+	width:400px;margin:0px auto;padding:5px 20px; 
+	border: 1px solid #fff;
+	border-radius: 15px; 
+	-moz-border-radius: 3px; -webkit-border-radius: 3px;
+	box-shadow: 0px 0px 3px #9d9d9d, inset 0px 0px 27px #fff;
+	-moz-box-shadow: 0px 0px 3px #9d9d9d, inset 0px 0px 14px #fff;
+	-webkit-box-shadow: 0px 0px 3px #9d9d9d, inset 0px 0px 27px #fff;
+}
+label {
+	margin: 11px 20px 0 0; 
+	font-size: 16px; color: #777;
+	text-transform: uppercase; 
+	text-shadow: 0px 1px 0px #fff;
+}
+input[type=text], textarea {
+	font: 14px normal normal uppercase helvetica, arial, serif;
+	color: #777;background:none;
+	width: 380px; height: 36px; padding: 0px 10px; margin: 0 0 10px 0;
+	border:1px solid #f8f5f1;
+	-moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;
+	-moz-box-shadow: inset 0px 0px 1px #726959;
+	-webkit-box-shadow:  inset 0px 0px 1px #b3a895; 
+	box-shadow:  inset 0px 0px 1px #b3a895;
+}	
+textarea { height: 80px; padding-top:14px;}
+textarea:focus, input[type=text]:focus {background:rgba(255,255,255,.35);}
+.submit_button { text-align : center;margin:10px auto;}
+.submit_button input[type=submit],.submit_button button {
+	cursor:pointer;
+	padding:5px 25px;
+	background:#353E49;
+	border:1px solid #252E39;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: 0 0 4px rgba(0,0,0, .75);
+	-moz-box-shadow: 0 0 4px rgba(0,0,0, .75);
+	box-shadow: 0 0 4px rgba(0,0,0, .75);
+	color:#f3f3f3;
+	font-size:1.1em;
+}
+
+.submit_button input[type=submit]:hover, .submit_button input[type=submit]:focus
+.submit_button button:hover, .submit_button button:focus {
+	background-color :#F3F4F6; 
+	color:#353E49;
+	-webkit-box-shadow: 0 0 1px rgba(0,0,0, .75);
+	-moz-box-shadow: 0 0 1px rgba(0,0,0, .75);
+	box-shadow: 0 0 1px rgba(0,0,0, .75);
+}
